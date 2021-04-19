@@ -1,0 +1,381 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;                               /* обнуляем отступы и убираем бордюры */
+    vertical-align: baseline;          /* приводим все к одной базовой линии */
+    background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+    font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                               /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    outline:none;
+}
+
+}
+td, td img {
+    vertical-align: top;            /* возвращаем привычное вертикальное выравнивание */
+}
+
+body {
+    text-align: left;
+    font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+    min-height:100%;
+
+}
+
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight:normal;
+}
+img{
+
+    max-width:100%;
+}
+.clr{
+    clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+
+/* --------------- /базовые настройки ---------*/
+
+
+
+
+
+
+
+
+
+
+
+    @font-face{
+    font-family: 'Milkshake';
+    src: url('../fonts/Milkshake.eot');
+    src: url('../fonts/Milkshake.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Milkshake.woff') format('woff'),
+         url('../fonts/Milkshake.ttf') format('truetype');
+}
+
+
+
+
+
+
+
+
+
+body {
+/*    width: 100%;*/
+}
+
+
+
+
+.main {
+    width: 100%;
+    height: 949px;
+    background: url('../images/fonvelo.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+/*@media screen and (min-width: 1800px){
+    .main {
+        background-size: cover;
+    }
+}*/
+
+
+
+
+.menu {
+    display: flex;
+/*    justify-content: space-between;*/
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+
+    padding: 40px 15px 0;
+    list-style: none;
+/*    padding: 0 27px;*/
+    margin-bottom: 250px;
+    border: 1px solid white;
+}
+
+
+.logo a{
+    font-family: "Milkshake";
+    text-decoration: none;
+
+    color: #fff;
+    font-size: 51px;
+    line-height: 30px;
+    font-weight: 100;
+    
+}
+
+.logo a:hover {
+    color: aquamarine;
+}
+
+
+
+
+.menu_items {
+    display: flex;
+}
+
+.menu_items li {
+    list-style-type: none;
+    padding: 0 55px;
+    border-bottom: 2px solid transparent;
+}
+
+.menu_items li:hover {
+    border-bottom: 2px solid red;
+    transition: .3s;
+}
+
+
+.basket {
+    display: flex;
+    align-items: center;
+
+}
+
+.basket_icon {
+    margin-right: 17px;
+    align-self: flex-start;
+    
+}
+
+.basket_name {
+    margin-right: 10px;
+
+}
+.basket_name {
+
+}
+
+
+.basket_number span {
+    color: #b8b1a7;
+}
+
+
+
+
+
+.menu_items a, .basket a {
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+
+
+
+
+
+
+.title_h1 h1 {
+    margin: 0 auto 45px;
+    max-width: 100%;
+    font-family: 'Old Standard TT', serif;
+    font-weight: 100;
+    font-size: 72px;
+    line-height: 72px;
+    text-align: center;
+    color: #fff;
+}
+
+.title_h2 h2 {
+    margin: 0 auto 55px;
+    max-width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 100;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+    color: #c2c1c1;
+}
+
+.btn_video {
+    position: relative;
+
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.btn_video:after {
+    content: '';
+    position: absolute;
+    right: 18px;
+    top: 20px;
+
+    width: 0;
+    height: 0;
+    border-top: 11px solid transparent;
+    border-left: 17px solid #383838;
+    border-bottom: 11px solid transparent;
+}
+
+
+
+
+
+
+
+
+
+
+/*block2*/
+
+.block2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 100px;
+}
+
+.our_history h2 {
+    font-family: 'Old Standard TT', serif;
+    font-weight: 100;
+    font-size: 60px;
+    line-height: 60px;
+    color: #3c3c3c;
+    margin-bottom: 55px;
+}
+
+
+.our_history {
+    width: 686px;
+    height: 850px;
+    padding: 115px 50px 0;
+}
+
+.our_history_img {
+    padding: 0 50px 90px 0;
+/*    flex-basis: 30%;*/
+    width: 686px;
+    height: 850px;
+
+}
+
+.our_history_img img {
+    -webkit-box-shadow: 0 0 30px rgba(122,122,122,0.2);
+    box-shadow: 0 0 30px rgba(122,122,122,0.2);
+}
+
+.our_history p {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 28px;
+    color: #6a6a6a;
+    margin-bottom: 45px;
+}
+
+.our_history_btn {
+    position: relative;
+
+    width: 220px;
+    height: 60px;
+    background-color: #3c3c3c;
+
+    outline: 1px solid #949494;
+    outline-offset: -6px;
+
+}
+
+
+.our_history_btn:after {
+    content: 'Read more';
+    position: absolute;
+    top: 13px;
+    left: 56px;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.8pt;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /*@media*/
+@media screen and (max-width: 600px){
+    
+        .menu_items li {
+        padding: 0 20px;
+    }
+}
+
+
+@media screen and (max-width: 1900px){
+    
+    .our_history {width: 400px;}
+    .our_history_img {width: 400px;}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
